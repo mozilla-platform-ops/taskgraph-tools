@@ -21,6 +21,6 @@ t_val = int(total_p.stdout.decode().strip())
 t_all_val = int(total_all_p.stdout.decode().strip())
 
 print(f"gcp jobs: {g_val}")
-print(f"non-win, non-macosx, non-bitbar, non-releng-hardware, non-scriptworker jobs: {t_val}")
+print(f"gcp migrate-able jobs (non-win, non-macosx, non-bitbar, non-releng-hardware, non-scriptworker jobs): {t_val}")
 print(f"all jobs: {t_all_val}")
-print(f"percent migrated to gcp: {g_val}/{t_val} = {g_val / t_val}")
+print(f"percentage of migrateable jobs migrated to gcp: {g_val}/{t_val} = {g_val / t_val}")
