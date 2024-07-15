@@ -2,4 +2,4 @@
 
 set -e
 
-./mach taskgraph tasks --json 2>/dev/null > tasks.json
+time bash -c './mach taskgraph tasks --json 2>/dev/null > tasks.json'
